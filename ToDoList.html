@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>To Do List Application</h1>
+    </header>
+
+   
+    <div class="background" id="main-menu">
+        <section class="outBox"> 
+        <h2>Welcome, please select one of the options to continue</h2>
+        <button onclick="viewExistingList()">View Existing List</button>
+        <button onclick="createNewList()">Create a New List</button>
+        <button onclick="exitApp()">Exit</button>
+        </section>
+    </div>
+
+    <div  class="background" id="sub-menu" style="display: none;">
+        <section class="outBox"> 
+        <h2>Welcome, please select one of the options to continue</h2>
+        <div id="view-list-menu" style="display: none;">
+            
+            <button onclick="showList()">Show Existing List</button>
+            <button onclick="addItem()">Add items to an Existing List</button>
+            <button onclick="goBack()">Go back</button>
+        
+        </div>
+        <div id="new-list-menu" style="display: none;">
+            <button onclick="createList()">Create a New List</button>
+            <button onclick="goBack()">Go back</button>
+        </div>
+        </section>
+    </div>
+    <div class="background">
+        <section class="outBox">
+            <div font-family="verdana" id="output"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
